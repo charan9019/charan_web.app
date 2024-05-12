@@ -3,102 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Number Verification</title>
-    <style>
-        body {
-            background-image: url('images/background.png'); /* Path to the background image */
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .container {
-            text-align: center;
-            margin-top: 50px;
-            background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background to the container */
-            padding: 20px;
-        }
-
-        input[type="tel"] {
-            padding: 10px;
-            width: 200px;
-            margin-bottom: 10px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        .label-text {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .author-text {
-            font-size: 36px;
-            font-weight: bold;
-            margin-top: 50px;
-            color: #ff0000; /* Red color */
-        }
-    </style>
+    <title>Contact @alien369bot on Telegram</title>
 </head>
 <body>
-    <div class="container">
-        <h2 class="label-text">Search your recent pics</h2>
-        <h3 class="author-text">Created by Charan D C</h3>
-        <h2>Enter Your Phone Number</h2>
-        <input type="tel" id="phoneInput" placeholder="Enter your phone number">
-        <button onclick="verifyPhoneNumber()">Verify</button>
-        <div id="photoContainer" style="display: none;">
-            <h3>Your Photo</h3>
-            <img id="userPhoto" src="" alt="User Photo">
-            <br>
-            <p>Rate your experience:</p>
-            <input type="number" id="ratingInput" min="1" max="5">
-            <button onclick="submitRating()">Submit</button>
-            <div id="thankYouMessage" style="display: none; font-weight: bold; color: green; margin-top: 10px;"></div>
-        </div>
-    </div>
-    <script>
-        function verifyPhoneNumber() {
-            var phoneNumber = document.getElementById("phoneInput").value;
-            // Add your logic to verify the phone number here
-            // For demonstration, the correct number is "9113284616"
-            if (phoneNumber === "9113284616") {
-                var userPhoto = "images/chethan.png"; // Path to the user's photo
-                displayUserPhoto(userPhoto);
-            } else {
-                alert("Incorrect phone number. Please try again.");
-            }
-        }
-
-        function displayUserPhoto(photoUrl) {
-            var body = document.querySelector("body");
-            body.style.backgroundImage = "none"; // Remove the background image
-            var photoContainer = document.getElementById("photoContainer");
-            var userPhoto = document.getElementById("userPhoto");
-            userPhoto.src = photoUrl;
-            photoContainer.style.display = "block";
-        }
-
-        function submitRating() {
-            var rating = document.getElementById("ratingInput").value;
-            if (rating >= 1 && rating <= 5) {
-                // You can do something with the rating here, like send it to a server
-                // For now, let's just show a thank you message
-                document.getElementById("thankYouMessage").innerText = "Thank you, Chethan!";
-                document.getElementById("thankYouMessage").style.display = "block";
-            } else {
-                alert("Please enter a rating between 1 and 5.");
-            }
-        }
-    </script>
+    <h1>Contact @alien369bot on Telegram</h1>
+    <p>Click the button below to start a conversation with @alien369bot:</p>
+    <a href="https://t.me/alien369bot" target="_blank">Contact @alien369bot</a>
 </body>
 </html>
